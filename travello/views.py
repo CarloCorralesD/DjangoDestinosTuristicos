@@ -3,6 +3,10 @@ from .models import Destination
 
 # Create your views here.
 
+def contact(request):
+	context = {}
+	return render(request,"contact.html",context)
+
 def index(request):
 	#dest1 = Destination.objects.get(id=1)
 	#dest2 = Destination.objects.get(id=2)
