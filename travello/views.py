@@ -5,7 +5,7 @@ from .models import Destination
 
 def index(request):
 	dest1 = Destination.objects.get(id=1)
-	dest2 = Destination()
+	dest2 = Destination.objects.get(id=2)
 	dest3 = Destination()
 	# dest1.name = "Arequipa"
 	# dest1.desc = "La ciudad blanca"
