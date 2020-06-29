@@ -3,6 +3,12 @@ from .models import Destination
 
 # Create your views here.
 
+def about(request):
+	context = {}
+	return render(request,"about.html",context)
+def news(request):
+	context = {}
+	return render(request,"news.html",context)
 def contact(request):
 	context = {}
 	return render(request,"contact.html",context)
